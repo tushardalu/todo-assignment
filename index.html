@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <form id="taskForm">
+    <label for="taskName">Task Name:</label>
+    <input type="text" id="taskName" required>
+
+    <label for="priority">Priority:</label>
+    <select id="priority" required>
+      <option value="low">Low</option>
+      <option value="medium">Medium</option>
+      <option value="high">High</option>
+    </select>
+
+    <button type="submit">Add Task</button>
+  </form>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Task Name</th>
+        <th>Priority</th>
+        <th>Favourite</th>
+      </tr>
+    </thead>
+    <tbody id="taskList">
+      <!-- Task rows will be appended here -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
